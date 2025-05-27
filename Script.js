@@ -39,3 +39,7 @@ function createTodo(task) {
   todoListElem.appendChild(todoElem);
 }
 createTodo('Köpa kaffe');
+createTodo('Köp kaka');
+createTodo('Drick kaffe');
+createTodo('Brygg  mer kaffe');
+createTodo('Köp Morots- och apelsinjuice utan fruktkött')

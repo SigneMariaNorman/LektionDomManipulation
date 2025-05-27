@@ -42,4 +42,36 @@ createTodo('Köpa kaffe');
 createTodo('Köp kaka');
 createTodo('Drick kaffe');
 createTodo('Brygg  mer kaffe');
-createTodo('Köp Morots- och apelsinjuice utan fruktkött')
+createTodo('Köp Morots- och apelsinjuice utan fruktkött');
+/* EVENTS:
+* JavaScript är ett event-drivet språk då mycket sker på anvämndarens input.
+För att veta om användaren har klickat med musen eller tryckt på ex enter-tangent kan vi använda oss av events.
+Vi sätter eventListener på HTML-dokument för att
+prenumenera på uppdateringar och definierar en funktion som ska köras.
+(Händelselyssnare) ska trigga en funktion när ett element trycks på.
+
+let buttonElem = document.querySelector('button');
+buttonElem.addEventListener('click', function(event) {
+//Körs när ett klick-event körs.
+});
+
+Nedan: Skapar två <li>-element och lägger dem i <ul>-listan.
+
+let listElem = document.querySelector('ul'); // Första <ul>-elementet på sidan hittas och lagras i variabeln listElem.
+for(let i=0;i<2;i++) { // Loop som körs två ggr; (i=0 och i=1)
+let listItem = document.createElement('li'); //Skapar ett nytt <li>-element
+listItem.innerHTML = i; //Sätter innehållet i <li>-elementet till i(0 och sedan 1).
+//Två skapade <li>-element kommer att innehålla texten "0" och "1".
+
+listElem.appendChild(listItem); //Lägger till <li>-elementet i listan (<ul>).
+Efter att loopen körts två ggr kommer listan att ha två <li>-element med innehållet: <ul>
+                                                                                     <li>0</li
+                                                                                    <li>1</li>         
+}
+
+
+Unobtrusive JavaScript
+En generell approach till JavaScript på webben
+* Separation of functionality.
+
+*/
